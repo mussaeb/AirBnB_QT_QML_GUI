@@ -19,7 +19,7 @@ Window {
     visible: true
     width: 640
     height: 480
-    title: qsTr("Wellcome page")
+    title: "Homepage"
 
 //    Loader{
 //            id: loader
@@ -190,7 +190,11 @@ Window {
             id: arivaldate
             Layout.preferredHeight: 40
             Layout.preferredWidth: 175
+            model: ['','1', '2' ,'3',  '4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20',
+                '21','22','23','24','25','26','27','28','29','30','31']
+
         }
+
 
         Text {
             id: element5
@@ -203,32 +207,35 @@ Window {
             id: departuredate
             Layout.preferredHeight: 40
             Layout.preferredWidth: 175
+            model: ['','1', '2' ,'3',  '4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20',
+                '21','22','23','24','25','26','27','28','29','30','31']
 
 
         }
 
 
 
-//        Button {
-//            id: button
-//            x: 113
-//            y: 212
-//            width: 101
-//            height: 40
-//            text: qsTr("Search")
-//            clip: false
-//            opacity: 1
+        Button {
+            id: button
+            x: 104
+            y: 195
+            width: 101
+            height: 40
+            text: qsTr("Search")
+           // clip: false
+           // opacity: 1
+       // }
+//        Rectangle { // our inlined button ui
+//        id: button
+//        x: 12; y: 12
+//        width: 116; height: 26
+//        color: "lightsteelblue"
+//        border.color: "slategrey"
+
+//        Text {
+//        anchors.centerIn: parent
+//        text: "Search"
 //        }
-        Rectangle { // our inlined button ui
-        id: button
-        x: 12; y: 12
-        width: 116; height: 26
-        color: "lightsteelblue"
-        border.color: "slategrey"
-        Text {
-        anchors.centerIn: parent
-        text: "Search"
-        }
 
 
         Loader {
