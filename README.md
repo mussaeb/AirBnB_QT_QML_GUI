@@ -11,3 +11,5 @@ Home airBnB
 4. Can calculate the price of the booking
 
 5. create a UML Class diagram and a UML Sequence diagram.
+
+
